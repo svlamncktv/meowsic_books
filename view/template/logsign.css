@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    position: relative;
+    margin-top: 40px;
+}
+
+.container::before,
+.container::after {
+    content: '';
+    position: absolute;
+    top: -35px;
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 45px solid #e3f2fd;
+    z-index: 2;
+}
+
+.container::before {
+    left: 35px;
+    transform: rotate(-15deg);
+}
+
+.container::after {
+    right: 35px;
+    transform: rotate(15deg);
+}
+
+.box::before,
+.box::after {
+    content: '';
+    position: absolute;
+    top: -22px;
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 25px solid #fff59d;
+    z-index: 3;
+}
+
+.box::before {
+    left: 44px;
+    transform: rotate(-15deg);
+}
+
+.box::after {
+    right: 44px;
+    transform: rotate(15deg);
+}
+
+.box {
+    position: relative;
+    background: #e3f2fd;
+    padding: 40px 30px;
+    width: 340px;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(33, 150, 243, 0.15);
+    border: 2px solid #bbdefb;
+}
+
+.box h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #1565c0;
+    font-size: 24px;
+}
+
+.input-group {
+    margin-bottom: 18px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 6px;
+    color: #1976d2;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 15px;
+    background: #ffffff;
+    border: 1px solid #90caf9;
+    border-radius: 10px;
+    outline: none;
+    transition: 0.3s;
+    color: #0d47a1;
+}
+
+.input-group input:focus {
+    border-color: #ffd54f;
+    box-shadow: 0 0 5px rgba(255, 213, 79, 0.4);
+}
+
+.role-selection {
+    margin-bottom: 20px;
+}
+
+.role-selection label {
+    display: block;
+    margin-bottom: 8px;
+    color: #1976d2;
+    font-size: 14px;
+}
+
+.role-options {
+    display: flex;
+    gap: 12px;
+}
+
+.role-options label {
+    flex: 1;
+    background: #ffffff;
+    border: 1px solid #90caf9;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    color: #1565c0;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    margin-bottom: 0;
+    font-weight: normal;
+}
+
+.role-options input[type="radio"] {
+    accent-color: #fbc02d;
+}
+
+.role-options input[type="radio"]:checked + span {
+    font-weight: bold;
+    color: #f57f17;
+}
+
+.role-options label:has(input[type="radio"]:checked) {
+    background-color: #fffde7;
+    border-color: #ffd54f;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #ffca28;
+    border: none;
+    border-radius: 10px;
+    color: #5d4037;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(255, 235, 59, 0.3);
+}
+
+.login-btn:hover {
+    background-color: #ffb300;
+}
+
+.signup-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #ffca28;
+    border: none;
+    border-radius: 10px;
+    color: #5d4037;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(255, 235, 59, 0.3);
+}
+
+.signup-btn:hover {
+    background-color: #ffb300;
+}

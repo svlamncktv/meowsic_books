@@ -1,0 +1,21 @@
+body {
+    background-color: #ffffff;
+    background-image: 
+        radial-gradient(circle 8px at 15% 20%, #e3f2fd 99%, transparent 100%),
+        radial-gradient(circle 8px at 85% 75%, #e3f2fd 99%, transparent 100%),
+        radial-gradient(circle 8px at 70% 15%, #e3f2fd 99%, transparent 100%),
+        radial-gradient(circle 8px at 25% 85%, #e3f2fd 99%, transparent 100%),
+        radial-gradient(circle 3.5px at 13% 16%, #e3f2fd 99%, transparent 100%),
+        radial-gradient(circle 3.5px at 17% 16%, #e3f2fd 99%, transparent 100%),
+        radial-gradient(circle 3.5px at 83% 71%, #e3f2fd 99%, transparent 100%),
+        radial-gradient(circle 3.5px at 87% 71%, #e3f2fd 99%, transparent 100%),
+        radial-gradient(circle 3.5px at 68% 11%, #e3f2fd 99%, transparent 100%),
+        radial-gradient(circle 3.5px at 72% 11%, #e3f2fd 99%, transparent 100%),
+        radial-gradient(circle 3.5px at 23% 81%, #e3f2fd 99%, transparent 100%),
+        radial-gradient(circle 3.5px at 27% 81%, #e3f2fd 99%, transparent 100%);
+    background-size: 200px 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
